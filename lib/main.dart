@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:localstorage/localstorage.dart';
 import 'package:teacher_management_frontend_flutter/config/theme/app_theme.dart';
 import 'app/routes/app_pages.dart';
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initLocalStorage();
@@ -19,6 +20,7 @@ Future<void> main() async {
                     ? const Size(390, 700)
                     : const Size(1440, 700);
             return GetMaterialApp(
+              debugShowCheckedModeBanner: false,
               theme: AppTheme.theme,
               title: "Application",
               initialRoute: AppPages.INITIAL,

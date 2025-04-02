@@ -30,7 +30,7 @@ class LoginForm extends StatelessWidget {
           ),
           const HighSpacer(size: 10),
           ReusableTextFormField(
-            value: authController.cin.value, // Bind to the controller's cin
+            value: authController.cin.value,
             onSaved: (value) => authController.cin.value = value ?? '',
             hintText: "Enter your National Identity Card Number",
             fonsize: 14,

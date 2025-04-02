@@ -16,7 +16,7 @@ class AuthController extends GetxController {
       LoginModel(cin: cin.value, password: password.value),
     );
     if (success) {
-      print("Success");
+      Get.toNamed("/dashboard");
     } else {
       loginError.value = 'Invalid email or password';
     }
